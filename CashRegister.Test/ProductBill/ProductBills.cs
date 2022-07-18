@@ -3,14 +3,8 @@ using CashRegister.Application.Services;
 using CashRegister.Domain.Models;
 using CashRegister.Infrastructure.Interfaces;
 using CashRegister.Infrastructure.Intrface;
-using CashRegister.Infrastructure.Repositories;
 using Moq;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace CashRegister.Test.ProductBill
