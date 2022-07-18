@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CashRegister.Infrastructure.Interfaces
+{
+    public interface IExchangeRepository<T> where T : class
+    {
+        double Exchange(string currency);
+    }
+}
