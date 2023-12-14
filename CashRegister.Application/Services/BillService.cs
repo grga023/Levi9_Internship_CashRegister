@@ -93,7 +93,7 @@ namespace CashRegister.Application.Services
 
             List<ProductBill> productBillList = new List<ProductBill>();
 
-            foreach (var billProducts in newBill.Products)
+            foreach (var billProducts  in newBill.Products)
             {
                 Product product = await _productRepository.GetByPKAsync(billProducts.ProductId);
                 if (product is null)

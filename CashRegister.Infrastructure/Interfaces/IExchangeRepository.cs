@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CashRegister.Infrastructure.Interfaces
 {
-    public interface IExchangeRepository<T> where T : class
+    public interface IExchangeRepository
     {
         double Exchange(string currency);
     }

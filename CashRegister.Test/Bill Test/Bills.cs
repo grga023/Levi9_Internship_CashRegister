@@ -184,7 +184,7 @@ namespace CashRegister.Test.Bill
         }
 
         [Test]
-        public async Task CreateBill_WrongproductId_ReturnproductException()
+        public async Task CreateBill_WrongProductId_ReturnProductException()
         {
             List<CreateBillProductRequestModel> probuctBill = new();
             CreateBillProductRequestModel productToAdd = new(1, 1);

@@ -36,8 +36,9 @@ namespace CashRegister.Infrastructure.Repositories
             var data = await _ctx.ProductBills
                 .FirstOrDefaultAsync(x => x.ProductId == (int)PK_P && x.BillNumber == PK_B);
 
-            return data;
+            return data ?? new ProductBill(); // Return a new instance with default values if data is null
         }
+
 
         public int GetTotalPriceByBillNumber(object PK_B)
         {

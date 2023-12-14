@@ -50,7 +50,7 @@ builder.Services.AddTransient<IValidationService, ValidationService>();
 builder.Services.AddTransient<IProductBillService, ProductBillService>();
 builder.Services.AddTransient<IProductBillRepository<ProductBill>, ProductBillRepository>();
 builder.Services.AddTransient<IExchangeService, ExchangeService>();
-builder.Services.AddTransient<ExchangeRepository>();
+builder.Services.AddTransient<IExchangeRepository, ExchangeRepository>();
 
 
 var app = builder.Build();

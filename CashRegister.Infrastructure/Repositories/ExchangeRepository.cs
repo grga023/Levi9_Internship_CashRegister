@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CashRegister.Infrastructure.Repositories
 {
-    public class ExchangeRepository : IExchangeRepository<Bill>
+    public class ExchangeRepository : IExchangeRepository
     {
         public double Exchange(string currency)
         {

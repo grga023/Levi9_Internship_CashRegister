@@ -13,9 +13,9 @@ namespace CashRegister.Application.Services
 {
     public class ExchangeService : IExchangeService
     {
-        private readonly ExchangeRepository _exchangeRepository;
+        private readonly IExchangeRepository _exchangeRepository;
 
-        public ExchangeService(ExchangeRepository exchangeRepository)
+        public ExchangeService(IExchangeRepository exchangeRepository)
         {
             _exchangeRepository = exchangeRepository;
         }

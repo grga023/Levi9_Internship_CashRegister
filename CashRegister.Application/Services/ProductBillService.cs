@@ -30,9 +30,9 @@ namespace CashRegister.Application.Services
         public async Task DeleteProductFromBill(object PK_B, object PK_P)
         {
 
-           /* var productToDelete = await _productBillRepository.GetAllByPKAsync(PK_B, PK_P);
+            var productToDelete = await _productBillRepository.GetAllByPKAsync(PK_B, PK_P);
             if (productToDelete is null)
-                throw new ProductBillNotFoundException("Wrong product id or bill number!");*/
+                throw new ProductBillNotFoundException("Wrong product id or bill number!");
            
             await _productBillRepository.Delete(PK_B, PK_P);
             
